@@ -1,0 +1,3 @@
+﻿npm install --global windows-build-tools
+
+if issues building
