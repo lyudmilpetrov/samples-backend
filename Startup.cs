@@ -42,12 +42,18 @@ namespace samples
                 app.UseHsts();
             }
 
+            app.UseFileServer();
+            app.UseDefaultFiles();
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            if (!env.IsDevelopment())
+            app.UseStaticFiles(new StaticFileOptions
             {
-                app.UseSpaStaticFiles();
-            }
+                ServeUnknownFileTypes = true,
+                DefaultContentType = "text/plain"
+            });
+            //if (!env.IsDevelopment())
+            //{
+            app.UseSpaStaticFiles();
+            //}
 
             app.UseRouting();
 

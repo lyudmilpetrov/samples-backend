@@ -10,6 +10,7 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <UserSecretsId>cf8285bb-884b-4a73-a839-cfbd25f7cfd9</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +22,68 @@
     <Content Remove="$(SpaRoot)**" />
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="assets\json\cases.json" />
+    <Content Remove="assets\weights\age_gender_model-weights_manifest.json" />
+    <Content Remove="assets\weights\face_expression_model-weights_manifest.json" />
+    <Content Remove="assets\weights\face_landmark_68_model-weights_manifest.json" />
+    <Content Remove="assets\weights\face_landmark_68_tiny_model-weights_manifest.json" />
+    <Content Remove="assets\weights\face_recognition_model-weights_manifest.json" />
+    <Content Remove="assets\weights\mtcnn_model-weights_manifest.json" />
+    <Content Remove="assets\weights\ssd_mobilenetv1_model-weights_manifest.json" />
+    <Content Remove="assets\weights\tiny_face_detector_model-weights_manifest.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="assets\json\cases.json" />
+    <None Include="assets\weights\age_gender_model-weights_manifest.json" />
+    <None Include="assets\weights\face_expression_model-weights_manifest.json" />
+    <None Include="assets\weights\face_landmark_68_model-weights_manifest.json" />
+    <None Include="assets\weights\face_landmark_68_tiny_model-weights_manifest.json" />
+    <None Include="assets\weights\face_recognition_model-weights_manifest.json" />
+    <None Include="assets\weights\mtcnn_model-weights_manifest.json" />
+    <None Include="assets\weights\ssd_mobilenetv1_model-weights_manifest.json" />
+    <None Include="assets\weights\tiny_face_detector_model-weights_manifest.json" />
+    <None Include="wwwroot\1-es5.js" />
+    <None Include="wwwroot\1-esnext.js" />
+    <None Include="wwwroot\10-es5.js" />
+    <None Include="wwwroot\10-esnext.js" />
+    <None Include="wwwroot\11-es5.js" />
+    <None Include="wwwroot\11-esnext.js" />
+    <None Include="wwwroot\12-es5.js" />
+    <None Include="wwwroot\12-esnext.js" />
+    <None Include="wwwroot\2-es5.js" />
+    <None Include="wwwroot\2-esnext.js" />
+    <None Include="wwwroot\7-es5.js" />
+    <None Include="wwwroot\7-esnext.js" />
+    <None Include="wwwroot\8-es5.js" />
+    <None Include="wwwroot\8-esnext.js" />
+    <None Include="wwwroot\9-es5.js" />
+    <None Include="wwwroot\9-esnext.js" />
+    <None Include="wwwroot\assets\weights\age_gender_model-shard1" />
+    <None Include="wwwroot\assets\weights\face_expression_model-shard1" />
+    <None Include="wwwroot\assets\weights\face_landmark_68_model-shard1" />
+    <None Include="wwwroot\assets\weights\face_landmark_68_tiny_model-shard1" />
+    <None Include="wwwroot\assets\weights\face_recognition_model-shard1" />
+    <None Include="wwwroot\assets\weights\face_recognition_model-shard2" />
+    <None Include="wwwroot\assets\weights\mtcnn_model-shard1" />
+    <None Include="wwwroot\assets\weights\ssd_mobilenetv1_model-shard1" />
+    <None Include="wwwroot\assets\weights\ssd_mobilenetv1_model-shard2" />
+    <None Include="wwwroot\assets\weights\tiny_face_detector_model-shard1" />
+    <None Include="wwwroot\main-es5.js" />
+    <None Include="wwwroot\main-esnext.js" />
+    <None Include="wwwroot\ngsw-worker.js" />
+    <None Include="wwwroot\polyfills-es5.js" />
+    <None Include="wwwroot\polyfills-esnext.js" />
+    <None Include="wwwroot\runtime-es5.js" />
+    <None Include="wwwroot\runtime-esnext.js" />
+    <None Include="wwwroot\safety-worker.js" />
+    <None Include="wwwroot\scripts.js" />
+    <None Include="wwwroot\styles-es5.js" />
+    <None Include="wwwroot\styles-esnext.js" />
+    <None Include="wwwroot\worker-basic.min.js" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
