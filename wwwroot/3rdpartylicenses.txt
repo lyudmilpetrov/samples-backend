@@ -141,6 +141,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 @microsoft/signalr
 Apache-2.0
 
